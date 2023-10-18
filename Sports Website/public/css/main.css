@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url('/images/backgroundMain.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+form {
+    text-align: center;
+    margin: 10px;
+}
+
+input {
+    height: 40px;
+    width: 500px;
+    padding: 5px;
+    border: 1px solid black;
+    border-left: none;
+    border-radius: 0 50px 50px 0;
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+#searchbtn {
+    padding: 10px;
+    padding-left: 10px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    border-right: none;
+    border-radius: 50px 0 0 50px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+#loginOrSignUp {
+    float: right;
+    margin-right: 20px;
+    height: 40px;
+    padding: 10px;
+    background-color: blueviolet;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#loginOrSignUp:hover {
+    background-color: rgb(113, 0, 219);
+    box-shadow: 0 0 20px blueviolet;
+}
+
+#post {
+    float: right;
+    margin-right: 20px;
+    height: 40px;
+    padding: 10px;
+    background-color: blueviolet;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#post:hover {
+    background-color: rgb(113, 0, 219);
+    box-shadow: 0 0 20px blueviolet;
+}
+
+#logout {
+    float: right;
+    margin-right: 20px;
+    height: 40px;
+    padding: 10px;
+    background-color: blueviolet;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#logout:hover {
+    background-color: rgb(113, 0, 219);
+    box-shadow: 0 0 20px blueviolet;
+}
+
+.container {
+    padding: 20px;
+}
+
+#container1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#eventElement {
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    cursor: pointer;
+    height: 400px;
+    box-shadow: 5px 5px 10px grey;
+    background-color: white;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+#eventElement:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 10px grey;
+    transition: transform .1s linear, box-shadow .1s linear;
+}
+
+#eventElement img {
+    width: 100%;
+}
+
+#eventElement h3, #eventElement p {
+    margin: 20px;
+}
+
+#eventElement a {
+    padding: 10px;
+    float: right;
+    text-decoration: none;
+}
+
+#eventElement a:hover {
+    transform: translateX(-5px);
+    transition: transform 0.1s linear;
+}

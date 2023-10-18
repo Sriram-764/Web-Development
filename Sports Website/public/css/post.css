@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url('/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+nav {
+    
+    padding: 20px;
+}
+
+
+nav a {
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a span {
+    margin-left: 10px;
+}
+
+nav a:hover {
+    background-color: rgb(101, 29, 167);
+    transition: background-color 0.3s linear, box-shadow 0.3s linear;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 0 50px blueviolet;
+}
+
+h1 {
+    margin: 50px 0 0 50px;
+}
+
+form {
+    margin: 20px 50px 20px 50px;
+    padding: 20px;
+}
+
+label {
+    margin: 20px;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#imageInput {
+    border: none;
+}
+
+textarea {
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+    background-color: blueviolet;
+    border: none;
+    width: 110px;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+
+button:hover {
+    color: white;
+    background-color: blueviolet;
+    box-shadow: 0 0 50px blueviolet;
+    transition: background-color 0.3s linear, box-shadow 0.3s linear;
+}
