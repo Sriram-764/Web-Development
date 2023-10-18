@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Sports Website</title>
+    <link rel="stylesheet" href="/css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+    <nav>
+        <a href="/"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    </nav>
+    <form onsubmit="signup(event)" method="post">
+        <h2>Sign Up</h2>
+        <input type="text" id="name" placeholder="Full Name" required><br>
+        <input type="text" id="regdNo" placeholder="Your College Registration Number" required><br>
+        <input type="text" id="college" placeholder="Your College Name" required><br>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <input type="password" id="password", placeholder="password" required><br>
+        <input type="password" id="cPassword" placeholder="Confirm Password" required><br>
+        <button type="submit">Sign Up</button><button type="button" id="login">Login</button>
+    </form>
+    <script src="/js/signup.js" type="module"></script>
+    <script>
+        const login = document.getElementById('login');
+        login.addEventListener('click', () => {
+            location.href = '/login';
+        })
+    </script>
+</body>
+</html>
